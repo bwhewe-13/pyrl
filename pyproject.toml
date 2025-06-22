@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyrl"
+authors = [
+    {name = "Ben Whewell", email = "ben.whewell@pm.me"}
+]
+description = "Applying RL using Python and Gymnasium"
+version = "0.1.0"
+requires-python = ">= 3.9"
+dependencies = [
+    "ale-py",
+    "gymnasium", 
+    "imageio",
+    "numpy", 
+    "matplotlib",
+    "optuna",
+    "seaborn",
+    "stable-baselines3",
+    "sb3-contrib",
+    "torch",
+    "tqdm"
+]
+
+[tool.setuptools.packages]
+find = {}
