@@ -1,5 +1,3 @@
-from . import predict
-from . import train
-from . import tune
+from . import ppo_train, predict, q_train, tune
 
-__all__ = ["predict", "train", "tune"]
+__all__ = ["ppo_train", "predict", "q_train", "tune"]
