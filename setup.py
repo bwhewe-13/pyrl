@@ -14,6 +14,7 @@ setup(
         "numpy",
         "matplotlib",
         "optuna",
+        "pettingzoo",
         "seaborn",
         "stable-baselines3",
         "sb3-contrib",

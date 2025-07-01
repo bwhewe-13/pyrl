@@ -1,6 +1,7 @@
 from gymnasium.envs.registration import register
 
-from . import custom_envs
-from . import modeling
+from . import envs, modeling
 
-__all__ = ["modeling", "custom_envs"]
+__all__ = ["modeling", "envs"]
+
+register(id="envs/PrisonGuard01-v0", entry_point="pyrl.envs.prisonguard:PrisonGuard01")
