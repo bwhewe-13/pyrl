@@ -1,8 +1,36 @@
 # Python
 __pycache__/
 *.py[cod]
+*.ipynb
 
+# C/C++
+*.so
+
+# Cross Section Data
+sources/
+
+# Packaging
+*.egg-info
 *.egg-info/
 *.egg
+build/
+dist/
 
-*.DS_Store
+# Sphinx documentation
+docs/_build/
+docs/build/
+
+# Coverage files
+.pytest_cache/
+.coverage
+.coveragerc
+coverage.xml
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Tests
+.pytest_cache/
