@@ -6,9 +6,6 @@ __pycache__/
 # C/C++
 *.so
 
-# Cross Section Data
-sources/
-
 # Packaging
 *.egg-info
 *.egg-info/
@@ -17,7 +14,6 @@ build/
 dist/
 
 # Sphinx documentation
-docs/_build/
 docs/build/
 
 # Coverage files

@@ -1,13 +1,9 @@
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyrl"
-authors = [
-    {name = "Ben Whewell", email = "ben.whewell@pm.me"}
-]
-description = "Applying RL using Python and Gymnasium"
 version = "0.1.0"
 requires-python = ">= 3.9"
 dependencies = [
@@ -24,6 +20,25 @@ dependencies = [
     "torch",
     "tqdm"
 ]
+authors = [
+    {name = "Ben Whewell", email = "ben.whewell@pm.me"}
+]
+description = "Applying RL using Python and Gymnasium"
+readme = "README.md"
+license = "BSD-3-Clause"
+keywords = ["reinforcement learning", "machine learning"]
 
-[tool.setuptools.packages]
-find = {}
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --cov=discrete1 --cov-report=html --cov-report=xml"
+testpaths = ["tests"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov",
+    "black",
+    "isort",
+    "flake8",
+    "pre-commit",
+]
